@@ -37,4 +37,5 @@ class FizzBuzz {
         i += 1;
         return i;
     }
+    // Funny Change for task 3.4
 }
