@@ -135,9 +135,14 @@ the code are doing. For example, what's the Java version of Python's `and`? What
 on with that weird `for` loop? As you do this, you might find it useful to write down your
 own implementation in Python to help you begin to create a mapping between the two languages.
 
-- [ ] Make note of any specific Java syntax which stands out to you and compare what you
+- [X] Make note of any specific Java syntax which stands out to you and compare what you
 come up with those around you. Try to come up with a list of at least five things that
 strike you as either similar to or different from Python.
+- The inclusion of semicolons at the end of almost every line is different to python.
+- Not sure if it is the same but making a boolean variable equal to a method.
+- Else if instead of elif.
+- Printing in java requires a lot more text prior.
+- The introduction of a psvm for methods is also different.
 
 Tip: IntelliJ works just like PyCharm, so you can place breakpoints and step through the code using the debugger in the same way.
 You might find it informative to try stepping through the code to see what it is doing on a few iterations.
@@ -256,33 +261,33 @@ Now, back to exploring the code!
 
 To briefly observe what private does, let's create a new class.
 
-- [ ] Right-click on `src` and select `New —> Java Class`. Name it `Main`. This will create a `Main.java` file.
+- [X] Right-click on `src` and select `New —> Java Class`. Name it `Main`. This will create a `Main.java` file.
 
 We'll write a main method which will attempt to call `FizzBuzz.doFizzBuzz` (or whatever you called
 your extracted helper method).
 
-- [ ] To quickly generate `main`, you can start typing `psvm` in IntelliJ and then press Enter to accept the
+- [X] To quickly generate `main`, you can start typing `psvm` in IntelliJ and then press Enter to accept the
 autocomplete — it will generate an empty "public static void main" (psvm) method for you. Neat!
 
-- [ ] In the body of this main method, type `FizzBuzz.`. You'll see that the private helper method doesn't
+- [X] In the body of this main method, type `FizzBuzz.`. You'll see that the private helper method doesn't
 appear in the autocomplete, but `FizzBuzz.main` does! If you wanted to be able to call the helper from
 inside `Main.java`, you would need to change the access modifier on the helper.
 It turns out that IntelliJ can help us out with this too!
 
 ### Task 3.1: Changing access modifiers using IntelliJ
 
-- [ ] In your main method in `Main.java`, try calling your private helper — something like `FizzBuzz.doFizzBuzz(5);`.
+- [X] In your main method in `Main.java`, try calling your private helper — something like `FizzBuzz.doFizzBuzz(5);`.
 
 You'll see that IntelliJ flags that you are trying to access something that is private. Unlike Python,
 Java won't even let you run the code when it detects this kind of violation of an access modifier (it is an
 error and not just a warning).
 
-- [ ] Hover over the error; IntelliJ will suggest some fixes.
+- [X] Hover over the error; IntelliJ will suggest some fixes.
 
-- [ ] Click `More actions...` and you'll see a list of the various possible access modifiers.
+- [X] Click `More actions...` and you'll see a list of the various possible access modifiers.
 These will be explained in more detail in your readings, but for now we can just make the method public.
 
-- [ ] Choose this fix and the error will go away. Try running `Main.java` to see if it outputs
+- [X] Choose this fix and the error will go away. Try running `Main.java` to see if it outputs
 what you expect.
 
 ### Task 3.2: Calling `FizzBuzz.main` from `Main.main`
@@ -301,7 +306,7 @@ through the readings over the next couple of weeks.
 
 ### Task 3.3 Push your latest changes
 
-- [ ] Now that you've made some more changes to your repository, you should repeat the add, commit, push process
+- [X] Now that you've made some more changes to your repository, you should repeat the add, commit, push process
 for any files that you have changed if you haven't done so recently. Remember to include a descriptive commit message.
 
 ### Task 3.4 Pulling changes from GitHub
